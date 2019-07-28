@@ -4,7 +4,7 @@ body    {
 
 .container  {
     background-color: rgb(218, 218, 12);
-    height: 500px;
+    height: 550px;
     width: 700px;
     margin-top: 120px;
     border: solid 2px black;
@@ -23,7 +23,7 @@ body    {
 }
 
 #start   {
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 #start-button   {
@@ -96,4 +96,51 @@ h4  {
 
 #dry-ice {
     padding-left: 25px;
+}
+
+#done   {
+    padding-top: 20px;
+    color:  rgb(194, 4, 4);
+    font-weight: bold;
+    font-size: 30px; 
+    text-decoration: underline;
+    padding-left: 295px;
+}
+
+#done-link  {
+    padding-top: 15px;
+}
+
+#done-title {
+    padding-top: 30px;
+}
+
+#all-done   {
+    text-align: center;
+    font-weight: bold;
+    color: rgba(190, 76, 10, 0.808);
+}
+
+#correct    {
+    padding-top: 30px;
+}
+
+#incorrect  {
+    padding-top: 15px;
+}
+
+#unanswered {
+    padding-top: 15px;
+}
+
+#correct-answers    {
+    padding-left: 202px;
+}
+
+#incorrect-answers  {
+    padding-left: 184px;
+}
+
+#unanswered-questions   {
+    padding-left: 252px;
 }
