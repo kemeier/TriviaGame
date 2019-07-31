@@ -62,16 +62,16 @@ h4  {
     padding-top: 35px;
 }
 
-#foot   {
-    padding-left: 150px;
-}
-
-#abdomin    {
-    padding-left: 73px;
-}
-
 #head   {
-    padding-left: 25px;
+    padding-left: 110px;
+}
+
+#foot   {
+    padding-left: 110px;
+}
+
+#abdomen  {
+    padding-left: 120px;
 }
 
 #two-days {

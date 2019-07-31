@@ -1,32 +1,243 @@
 <!DOCTYPE html>
 <html>
-    <html lang="en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <script src="../assets/javascript/app.js"></script>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        type="text/css"
+        href="../assets/css/style.css">
+    <script
+        src="../assets/javascript/app.js"></script>
     <title>Trivia Game</title>
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container"
+        id="welcome-page">
         <div class="row">
-            <div class="col-md-12" id="title">
-                <h1 id="title-text">Totally Trivial Trivia!</h1>
+            <div class="col-md-12"
+                id="title">
+                <h1
+                    id="title-text">
+                    Totally
+                    Trivial
+                    Trivia!
+                </h1>
             </div>
-            <div class="col-md-12"  id="start">
-                <a href="triviapage.html" id="start-button" class="btn btn-primary btn-lg active" tabindex="-1" role="button" aria-active="true">START</a>
+            <div class="col-md-12"
+                id="start">
+                <a id="start-button"
+                    class="btn btn-primary btn-lg active"
+                    tabindex="-1"
+                    role="button"
+                    aria-active="true">START</a>
             </div>
 
         </div>
 
 
     </div>
+
+    <div class="container d-none"
+        id="triviapage">
+        <div class="row">
+            <div class="col-md-12"
+                id="title-2">
+                <h1
+                    id="title-text-2">
+                    Totally
+                    Trivial
+                    Trivia!
+                </h1>
+            </div>
+            <div class="col-md-12"
+                id="timer">
+                <h1
+                    id="time-remaining">
+                    <span
+                        id="timed"></span>
+                </h1>
+            </div>
+
+            <div class="col-md-12"
+                id="question-1">
+                <h4>The heart
+                    of a
+                    shrimp is
+                    located in
+                    its:</h4>
+            </div>
+        </div>
+
+        <form>
+            <div class="row">
+                <div
+                    class="col-md-12">
+                    <label
+                        class="radio-inline"
+                        id="abdomen"><input
+                            type="radio"
+                            name="q1">Abdomen</label>
+                    <label
+                        class="radio-inline"
+                        id="foot"><input
+                            type="radio"
+                            name="q1">Foot</label>
+                    <label
+                        class="radio-inline"
+                        id="head"><input
+                            type="radio"
+                            name="q1">Head</label>
+
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+                <div class="col-md-12"
+                    id="question-2">
+                    <h4> The amount of
+                        time it takes
+                        for a sloth to
+                        digest its
+                        food is:</h4>
+                </div>
+                <form>
+                    <div
+                        class="col-md-12">
+                        <label
+                            class="radio-inline"
+                            id="two-days"><input
+                                type="radio"
+                                name="optradio">2
+                            days</label>
+                        <label
+                            class="radio-inline"
+                            id="two-weeks"><input
+                                type="radio"
+                                name="optradio">2
+                            weeks</label>
+                        <label
+                            class="radio-inline"
+                            id="two-months"><input
+                                type="radio"
+                                name="optradio">2
+                            months</label>
+        
+                    </div>
+                </form>
+        
+        
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12"
+                    id="question-3">
+                    <h4> Nearly 3
+                        percent of ice
+                        in Antarctic
+                        glaciers is
+                        made of:</h4>
+                </div>
+        
+                <form>
+                    <div
+                        class="col-md-12">
+                        <label
+                            class="radio-inline"
+                            id="penguin"><input
+                                type="radio"
+                                name="optradio">Penguin
+                            urine</label>
+                        <label
+                            class="radio-inline"
+                            id="water"><input
+                                type="radio"
+                                name="optradio">Fresh
+                            water</label>
+                        <label
+                            class="radio-inline"
+                            id="dry-ice"><input
+                                type="radio"
+                                name="optradio">
+                            C02 in dry
+                            ice
+                            form</label>
+        
+                    </div>
+                </form>
+        
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12"
+                    id="done-link">
+                    <a
+                        id="done">DONE</a>
+                </div>
+        
+            </div>
+    </div>
+
+    <div class="container d-none"
+        id="finishpage">
+        <div class="row">
+            <div class="col-md-12"
+                id="title">
+                <h1
+                    id="title-text">
+                    Totally
+                    Trivial
+                    Trivia!
+                </h1>
+            </div>
+            <div class="col-md-12"
+                id="done-title">
+                <h1
+                    id="all-done">
+                    All Done!
+                </h1>
+            </div>
+
+            <div class="col-md-12"
+                id="correct">
+                <h3
+                    id="correct-answers">
+                    Correct
+                    Answers:
+                </h3>
+            </div>
+
+            <div class="col-md-12"
+                id="incorrect">
+                <h3
+                    id="incorrect-answers">
+                    Incorrect
+                    Answers:
+                </h3>
+            </div>
+
+            
+
+        </div>
+
+
+    </div>
+
+
 </body>
 
 
